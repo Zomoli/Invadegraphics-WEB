@@ -1,0 +1,51 @@
+.splash {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  width: 100%;
+}
+.splash h1 {
+  font-size: 88px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  height: 220px;
+  line-height: 220px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 760px) {
+  .splash h1 {
+    font-size: 32px;
+  }
+  .downloadButton {
+    opacity: 0;
+    bottom: 0;
+  }
+  body.ready .downloadButton {
+    bottom: 30px;
+    opacity: 1;
+  }
+  body.ready .downloadButton, .downloadButton {
+    position: absolute;
+    width: 80%;
+    min-width: 320px;
+    border-radius: 32px;
+    height: 64px;
+    line-height: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  footer {
+    display: block;
+    position: absolute;
+    top: 100%;
+  }
+}
